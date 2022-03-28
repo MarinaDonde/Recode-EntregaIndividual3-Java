@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<title>Viaje!</title>
+<link rel="icon" href="imagens/favicon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Cadastrar Cliente</h1>
+		<form name="frmCliente" action="insertclt">
+			<table>
+				<tr>
+					<td><input type="text" name="nome" placeholder="Nome" class="caixa"></td>
+				</tr>
+				<tr>
+					<td><input type="text" name="CPF" placeholder="CPF" class="caixa"></td>
+				</tr>			
+				<tr>
+					<td><input type="text" name="telefone" placeholder="Telefone" class="caixa"></td>
+				</tr>
+				<tr>
+					<td><input type="text" name="endereco" placeholder="Endereço" class="caixa"></td>
+				</tr>			
+				<tr>
+					<td><input type="text" name="email" placeholder="email" class="caixa"></td>
+				</tr>
+				<tr>
+					<td><input type="number" name="idDestino" placeholder="IdDestino" class="caixa"></td>
+				</tr>
+			</table>
+			<input type="button" value="Adicionar" class="btn" onclick="validarCliente()">
+			<a href="cliente">Voltar</a>
+		</form>
+	</div>
+<script src="scripts/validador.js"></script>
+</body>
+</html>

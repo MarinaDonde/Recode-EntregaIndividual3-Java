@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<title>Viaje!</title>
+<link rel="icon" href="imagens/favicon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Criar novo Contato</h1>
+		<form name="frmContato" action="insertcnt">
+			<table>
+				<tr>
+					<td><input type="text" name="nome" placeholder="Nome" class="caixa"></td>
+				</tr>
+				<tr>
+					<td><input type="text" name="telefone" placeholder="Telefone" class="caixa"></td>
+				</tr>
+				<tr>
+					<td><input type="text" name="email" placeholder="email" class="caixa"></td>
+				</tr>
+				<tr>
+					<td><input type="number" name="idDestino" placeholder="IdDestino" class="caixa"></td>
+				</tr>
+			</table>
+			<input type="button" value="Adicionar" class="btn" onclick="validarContato()">
+			<a href="contato">Voltar</a>
+		</form>
+	</div>
+<script src="scripts/validador.js"></script>
+</body>
+</html>
